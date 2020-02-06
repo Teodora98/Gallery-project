@@ -1,8 +1,16 @@
 <section id="gallery">
     <div class="container">
     <div class="row" style="margin-top:30px;">
-
-
+      <div class="col-lg-7">
+        <h5 style="margin-top:10px;">Choose category....</h5>
+      </div>
+        <div class="col-lg-5">
+        <li style="margin-left:10px;" class="btn btn-lg text-uppercase" *ngFor="let naslov of titles" (click)="funk(naslov)">{{naslov.ciklusTitle}}</li> 
+        </div>
+        <div   *ngIf="isShow" id="load" style="display: block; height: 300px; margin-top: 150px;">
+          <ripple-loader color="black" style="size: 500px; margin-left:500px;"></ripple-loader>
+        </div>
+    </div>
     <div id="images" style="margin-bottom:50px;">
     <mat-carousel
       timings="250ms ease-in"
@@ -26,6 +34,5 @@
       ></mat-carousel-slide>
     </mat-carousel>
     </div>
-    
     </div>
     </section>

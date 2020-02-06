@@ -14,4 +14,8 @@ export class GalleryServiceService {
     return this.http.get<Category[]>("http://5e39ca348d7e1300149cd687.mockapi.io/ciklus")
   }
 
+  getImages(id: number):Observable<Image[]>{
+    return this.http.get<Image[]>(`http://5e39ca348d7e1300149cd687.mockapi.io/ciklus/${id}/sliki`)
+  }
+
 }
