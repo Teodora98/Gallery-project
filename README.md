@@ -29,3 +29,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## mockAPI
 
 https://www.mockapi.io/projects/5e39ca348d7e1300149cd688
+
+## What to do after cloning this project if there are local errors?
+If there is an error from the type " Could not find module "@angular-devkit/build-angular" ", then you should run the command:
+  npm install @angular/cli
+or alternatively the following command:
+  npm install --save-dev @angular-devkit/build-angular .
