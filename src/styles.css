@@ -130,12 +130,6 @@
     font-size: 24px;
     font-weight: bold;
 }
-.carousel-item{
-    height:80vh;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 #caption{
     text-align: right;
     padding:0px;
@@ -158,30 +152,6 @@
 #gallery_one{
     margin-bottom: 5%;
 }
-#gallery_two{
-    margin-bottom: 10%;
-}
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-    content: '>';
-    font-size: 50px;
-    color: black;
-}
-
-.carousel-control-prev-icon:after {
-    content: '<';
-    font-size: 50px;
-    color: black;
-}
-
-.najava{
-    color: #343a40;
-}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
