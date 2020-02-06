@@ -12,6 +12,9 @@ import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
 import { MatCarouselSlide, MatCarouselSlideComponent } from '@ngmodule/material-carousel';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { RippleLoaderModule } from 'ng-spinners';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -27,10 +30,14 @@ import { RippleLoaderModule } from 'ng-spinners';
     HttpClientModule,
     BrowserAnimationsModule,
     AngularFontAwesomeModule,
-    RippleLoaderModule
+    RippleLoaderModule,
+    BsDropdownModule.forRoot(),
+    TooltipModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [BsDropdownModule, TooltipModule, ModalModule]
 })
 export class AppModule { }
 
